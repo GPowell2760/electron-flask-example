@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Electron Flask App</title>
+  </head>
+  <body>
+    <h1>Electron Flask App</h1>
+    <button id="fetch-message">Fetch Message</button>
+    <p id="message"></p>
+
+    <script>
+      const button = document.getElementById("fetch-message");
+      const messageParagraph = document.getElementById("message");
+
+      button.addEventListener("click", async () => {
+        console.log("Button clicked. Fetching message...");
+        try {
+          const message = await window.electronAPI.fetchMessage();
+          console.log(`Received message: ${message}`);
+          messageParagraph.textContent = message;
+        } catch (error) {
+          console.error("Error fetching message:", error);
+          messageParagraph.textContent = "Error fetching message";
+        }
+      });
+    </script>
+  </body>
+</html>
