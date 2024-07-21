@@ -4,6 +4,8 @@ This project demonstrates how to integrate a Flask backend with an Electron fron
 
 ## Project Structure
 
+
+```sh
 .
 ├── README.md
 ├── backend
@@ -16,6 +18,8 @@ This project demonstrates how to integrate a Flask backend with an Electron fron
     ├── package-lock.json
     ├── package.json
     └── preload.js
+```
+
 
 ## Setup
 
