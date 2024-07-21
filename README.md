@@ -42,7 +42,7 @@ Ensure you have the following installed:
 2. Create a virtual environment and activate it:
 
     ```sh
-    python -m venv .venv
+    python3 -m venv .venv
     source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
     ```
 
@@ -52,11 +52,11 @@ Ensure you have the following installed:
     pip install -r requirements.txt
     ```
 
-4. Run the Flask application:
+4. Deactivate the virtual environment:
 
-    ```sh
-    python app.py
-    ```
+   ```sh
+   deactivate
+   ```
 
 ### Frontend Setup
 
